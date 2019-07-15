@@ -16,6 +16,11 @@
 @import 'tree';
 @import 'login';
 
+// variable
+$panel-height: 60px;
+$main-width: 1200px;
+$mobile-width: calc(100% - 30px);
+
 * {
 	padding: 0;
 	border: 0;
@@ -23,9 +28,10 @@
 	outline: none;
 	font-family: "FontFirst2", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 html {
 	@include greyScrollBar();
-	background-color: #edf1f5;
+	background-color: #f8f8f8;
 	// overflow-x: hidden;
 }
 
@@ -54,10 +60,6 @@ a {
 	display: block;
 }
 
-// variable
-$panel-height: 60px;
-$main-width: 1200px;
-
 .app {
 	position: relative;
 	width: 100%;
@@ -73,17 +75,29 @@ $main-width: 1200px;
 			width: 100%;
 			height: $panel-height;
 			background-color: #fff;
+			.h-btn {
+				display: none;
+				@media (max-width: $max-width) {
+					display: block;
+				}
+			}
 			.h-grid {
 				position: relative;
 				width: $main-width;
 				margin: auto;
 				@include grid_2x(100px, 1fr);
+				@media (max-width: $max-width) {
+					width: $mobile-width;
+				}
 				.col-1 {
 					@include column_n(1);
 				}
 				.col-2 {
 					@include column_n(2);
 					text-align: right;
+					// @media (max-width: $max-width) {
+					// 	display: none;
+					// }
 				}
 			}
 		}
@@ -96,7 +110,7 @@ $main-width: 1200px;
 	.footer {
 		position: relative;
 		width: 100%;
-		height: $panel-height;
+		padding: 30px 0;
 		background-color: #fff;
 	}
 }
@@ -105,6 +119,9 @@ $main-width: 1200px;
 	position: relative;
 	width: $main-width;
 	margin: auto;
+	@media (max-width: $max-width) {
+		width: $mobile-width;
+	}
 }
 
 .logo-header {
@@ -114,10 +131,31 @@ $main-width: 1200px;
 .menu-header {
 	position: relative;
 	float: right;
+	@media (max-width: $max-width) {
+		position: fixed;
+		top: $panel-height;
+		right: -300px;
+		width: 300px;
+		height: calc(100vh - 60px);
+		background-color: #fff;
+		@include animate_2();
+	}
+	&.active {
+		@media (max-width: $max-width) {
+			@include animate_2();
+			right: 0;
+		}
+	}
 	li {
 		position: relative;
 		list-style: none;
 		float: left;
+		@media (max-width: $max-width) {
+			float: none;
+			width: 100%;
+			text-align: left;
+			border-bottom: $border1;
+		}
 		a {
 			display: block;
 			height: $panel-height;
@@ -154,6 +192,12 @@ $main-width: 1200px;
 	.t-l-link {
 		font-size: 12pt;
 		line-height: 50px;
+		a {
+			color: $pos-color;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 
 }

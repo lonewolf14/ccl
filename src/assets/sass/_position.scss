@@ -88,12 +88,32 @@
 	flex-wrap: wrap;
 	justify-content: space-between;	
 	.df-card {
-		flex: 1 1 calc(20% - 1em);
+		flex: 1 1 calc(33.33% - 1em);
 		margin: .55rem .50em;
 	}
 	@media (max-width: $max-width) {
 		.df-card {
 			flex: 1 1 calc(100% - 1em);
+		}
+	}
+	&.mobile-flex {
+		@media (max-width: $max-width) {
+			position: relative;
+			width: 100%;
+			display: flex;
+			flex-wrap: nowrap;
+			// flex-direction: row;
+			justify-content: space-between;
+			overflow-x: auto;
+		}
+		.df-card {
+			@media (max-width: $max-width) {
+				display: inline-block;
+				flex: 1 1 calc(100% - 1em);
+			}
+		}
+		.card {
+			min-width: 300px !important;
 		}
 	}
 }

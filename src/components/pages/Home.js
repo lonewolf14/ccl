@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class Pages extends Component {
   constructor () {
@@ -10,7 +11,9 @@ class Pages extends Component {
     var dt = []
     for (let index = 0; index < val; index++) {
       dt.push(
-        <div className="margin-left-5px margin-right-5px image image-150px image-circle background-dark-grey"></div>
+        <div className="df-card">
+          <div className="margin-left-5px margin-right-5px image image-160px image-circle background-dark-grey"></div>
+        </div>
       )
     }
     return(
@@ -42,7 +45,7 @@ class Pages extends Component {
         <div className="banner"></div>
         <div className="main padding-top-30px padding-bottom-30px">
 
-        <div className="padding-15px"></div>
+          <div className="padding-15px"></div>
 
           <div className="width width-center">
             <h1 className="txt-site txt-center txt-main">Acara</h1>
@@ -51,16 +54,25 @@ class Pages extends Component {
 
           <div className="padding-15px"></div>
 
-          <div className="display-flex">
+          <div className="display-flex mobile-flex">
             { this.onCircle(6) }
           </div>
 
-          {/* <div className="grid grid-2x gap-30px">
+          <div className="padding-30px"></div>
+
+          <div className="grid grid-2x gap-30px grid-mobile-none">
             <div className="col-1">
-              <div className="image image-middle image-radius background-dark-grey"></div>
+              <div className="grid grid-2x gap-15px">
+                <div className="col-1">
+                  <div className="margin-15px image image-full image-radius background-dark-grey"></div>
+                </div>
+                <div className="col-2">
+                  <div className="margin-15px image image-full image-radius background-dark-grey"></div>
+                </div>
+              </div>
             </div>
             <div className="col-2">
-              <h1 className="txt-site txt-main margin-bottom-15px">Aktifitas</h1>
+              <h1 className="txt-site txt-main margin-15px">Penghargaan</h1>
               <p className="txt-site txt-14 txt-primary margin-bottom-15px">
                 Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
               </p>
@@ -68,12 +80,14 @@ class Pages extends Component {
                 Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
               </p>
               <div className="content-right">
-                <button className="btn btn-sekunder btn-radius">
-                  Lihat Selengkapnya
-                </button>
+                <Link to={'/penghargaan'}>
+                  <button className="btn btn-sekunder btn-radius">
+                    Lihat Selengkapnya
+                  </button>
+                </Link>
               </div>
             </div>
-          </div> */}
+          </div>
 
           <div className="padding-30px"></div>
 
@@ -82,11 +96,11 @@ class Pages extends Component {
               Aktifitas
             </div>
             <div className="col-2 t-l-link">
-              <a href="#">Selanjutnya</a>
+            <Link to={'/aktifitas'}>Selengkapnya</Link>
             </div>
           </div>
-          <div className="display-flex">
-            { this.onContent(4) }
+          <div className="display-flex mobile-flex">
+            { this.onContent(3) }
           </div>
 
           <div className="padding-30px"></div>
@@ -96,25 +110,11 @@ class Pages extends Component {
               Fasilitas
             </div>
             <div className="col-2 t-l-link">
-              <a href="#">Selanjutnya</a>
+            <Link to={'/fasilitas'}>Selengkapnya</Link>
             </div>
           </div>
-          <div className="display-flex">
-            { this.onContent(4) }
-          </div>
-
-          <div className="padding-30px"></div>
-
-          <div className="title-link">
-            <div className="col-1 t-l-tittle">
-              Acara
-            </div>
-            <div className="col-2 t-l-link">
-              <a href="#">Selanjutnya</a>
-            </div>
-          </div>
-          <div className="display-flex">
-            { this.onContent(4) }
+          <div className="display-flex mobile-flex">
+            { this.onContent(3) }
           </div>
 
           <div className="padding-30px"></div>
@@ -124,28 +124,20 @@ class Pages extends Component {
               Program
             </div>
             <div className="col-2 t-l-link">
-              <a href="#">Selanjutnya</a>
+            <Link to={'/program'}>Selengkapnya</Link>
             </div>
           </div>
-          <div className="display-flex">
-            { this.onContent(4) }
+          <div className="display-flex mobile-flex">
+            { this.onContent(3) }
           </div>
 
           <div className="padding-30px"></div>
 
-          <div className="title-link">
-            <div className="col-1 t-l-tittle">
-              Penghargaan
-            </div>
-            <div className="col-2 t-l-link">
-              <a href="#">Selanjutnya</a>
-            </div>
-          </div>
-          <div className="display-flex">
-            { this.onContent(4) }
+          <div className="margin-15px image image-radius background-dark-grey" style={{height: '350px'}}>
+            <div className="txt-site txt-white txt-center txt-top">GOOGLE MAP</div>
           </div>
 
-          <div className="padding-30px"></div>
+          <div className="padding-10px"></div>
 
         </div>
       </div>
@@ -154,3 +146,4 @@ class Pages extends Component {
 }
 
 export default Pages
+

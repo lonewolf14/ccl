@@ -54,6 +54,12 @@
 		width: calc(100% - 30px);
 		padding: 0 15px;
 	}
+	&.width-30px {
+		width: 30px;
+	}
+	&.width-50px {
+		width: 50px;
+	}
 	&.width-100px {
         @include width(100px);
     }
