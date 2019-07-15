@@ -93,7 +93,8 @@
 	}
 	@media (max-width: $max-width) {
 		.df-card {
-			flex: 1 1 calc(100% - 1em);
+			flex: 1 1 calc(100% - 0em);
+			margin: .55rem 0em;
 		}
 	}
 	&.mobile-flex {
@@ -109,7 +110,8 @@
 		.df-card {
 			@media (max-width: $max-width) {
 				display: inline-block;
-				flex: 1 1 calc(100% - 1em);
+				flex: 1 1 calc(100% -1em);
+				margin: .55rem .50em;
 			}
 		}
 		.card {

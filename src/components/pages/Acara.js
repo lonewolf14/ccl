@@ -39,7 +39,7 @@ class Pages extends Component {
 
         <div className="padding-10px"></div>
 
-        <div className="padding-15px">
+        <div className="padding-15px app-mobile-none-padding">
           <div className="display-flex">
             { this.onContent(12) }
           </div>

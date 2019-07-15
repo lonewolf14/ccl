@@ -46,7 +46,7 @@ class Pages extends Component {
 
         <div className="padding-10px"></div>
 
-        <div className="padding-15px">
+        <div className="padding-15px app-mobile-none-padding">
           
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
             <div className="col-1">

@@ -39,6 +39,13 @@ a {
 	text-decoration: none;
 }
 
+.app-mobile-none-padding {
+	@media (max-width: $max-width) {
+		width: 100%;
+		padding: 15px 0;
+	}
+}
+
 .app-mobile {
 	display: none !important;
 	@media (max-width: $max-width) {

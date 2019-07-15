@@ -234,7 +234,8 @@
     margin: .55rem .50em; }
   @media (max-width: 800px) {
     .display-flex .df-card {
-      flex: 1 1 calc(100% - 1em); } }
+      flex: 1 1 calc(100% - 0em);
+      margin: .55rem 0em; } }
   @media (max-width: 800px) {
     .display-flex.mobile-flex {
       position: relative;
@@ -246,7 +247,8 @@
   @media (max-width: 800px) {
     .display-flex.mobile-flex .df-card {
       display: inline-block;
-      flex: 1 1 calc(100% - 1em); } }
+      flex: 1 1 calc(100% -1em);
+      margin: .55rem .50em; } }
   .display-flex.mobile-flex .card {
     min-width: 300px !important; }
 
@@ -3499,6 +3501,11 @@ html {
 
 a {
   text-decoration: none; }
+
+@media (max-width: 800px) {
+  .app-mobile-none-padding {
+    width: 100%;
+    padding: 15px 0; } }
 
 .app-mobile {
   display: none !important; }
