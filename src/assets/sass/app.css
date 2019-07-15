@@ -244,13 +244,17 @@
       flex-wrap: nowrap;
       justify-content: space-between;
       overflow-x: auto; } }
+  .display-flex.mobile-flex .df-card {
+    flex: 1 1 calc(10% - 1em);
+    margin: .55rem .50em; }
+    @media (max-width: 800px) {
+      .display-flex.mobile-flex .df-card {
+        display: inline-block;
+        flex: 1 1 calc(100% -1em);
+        margin: .55rem .50em; } }
   @media (max-width: 800px) {
-    .display-flex.mobile-flex .df-card {
-      display: inline-block;
-      flex: 1 1 calc(100% -1em);
-      margin: .55rem .50em; } }
-  .display-flex.mobile-flex .card {
-    min-width: 300px !important; }
+    .display-flex.mobile-flex .card {
+      min-width: 300px !important; } }
 
 .display-flex-normal {
   position: relative;
