@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Switch, Router, Route, NavLink, HashRouter } from 'react-router-dom'
+import { BrowserRouter as Router, Route, NavLink, HashRouter } from 'react-router-dom'
 
 import Home from '../components/pages/Home'
 import Acara from '../components/pages/Acara'
