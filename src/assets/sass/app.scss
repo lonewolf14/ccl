@@ -17,7 +17,7 @@
 @import 'login';
 
 // variable
-$panel-height: 60px;
+$panel-height: 100px;
 $main-width: 1200px;
 $mobile-width: calc(100% - 30px);
 
@@ -31,12 +31,22 @@ $mobile-width: calc(100% - 30px);
 
 html {
 	@include greyScrollBar();
-	background-color: #f8f8f8;
+	background-color: #fff;
 	// overflow-x: hidden;
 }
 
 a {
 	text-decoration: none;
+}
+
+.app-line {
+	position: relative;
+	width: 80px;
+	border-bottom: 3px $min-color solid;
+	border-radius: 5px;
+	&.center {
+		margin: auto;
+	}
 }
 
 .app-mobile-none-padding {
@@ -82,6 +92,14 @@ a {
 			width: 100%;
 			height: $panel-height;
 			background-color: #fff;
+			box-shadow: $shadow;
+			.info {
+				position: relative;
+				width: 100%;
+				height: 35px;
+				overflow: hidden;
+				background-color: $min-color;
+			}
 			.h-btn {
 				display: none;
 				@media (max-width: $max-width) {
@@ -112,13 +130,17 @@ a {
 	.body {
 		position: relative;
 		width: 100%;
-		background-color: #f8f8f8;
+		background-color: #fff;
 	}
 	.footer {
 		position: relative;
 		width: 100%;
 		padding: 30px 0;
-		background-color: #fff;
+		background-color: #f5f5f5;
+		// color: #fff;
+		// * {
+		// 	color: #fff !important;
+		// }
 	}
 }
 
@@ -132,7 +154,8 @@ a {
 }
 
 .logo-header {
-	line-height: $panel-height;
+	line-height: $panel-height - 35px;
+	color: $min-color;
 }
 
 .menu-header {
@@ -165,15 +188,24 @@ a {
 		}
 		a {
 			display: block;
-			height: $panel-height;
-			line-height: $panel-height;
+			height: $panel-height - 35px;
+			line-height: $panel-height - 35px;
 			padding: 0 10px;
-			font-size: 11pt;
-			text-transform: capitalize;
-			color: $txt-54-color;
+			font-size: 10.5pt;
+			text-transform: uppercase;
+			color: $txt-84-color;
 			&:hover {
-				color: $txt-84-color;
-				@include animate_1();
+				height: $panel-height - 39px;
+				background-color: #fff;
+				color: $min-color;
+				border-bottom: 4px $min-color solid;
+				// @include animate_1();
+			}
+			&.active {
+				height: $panel-height - 39px;
+				background-color: #fff;
+				color: $min-color;
+				border-bottom: 4px $min-color solid;
 			}
 		}
 	}
@@ -194,7 +226,8 @@ a {
 	.t-l-tittle {
 		font-size: 14pt;
 		font-weight: 600;
-		line-height: 50px;
+		line-height: 30px;
+		margin-top: 5px;
 	}
 	.t-l-link {
 		font-size: 12pt;
@@ -212,6 +245,44 @@ a {
 .banner {
 	position: relative;
 	width: 100%;
-	height: 450px;
-	background-color: #999;
+	// height: 500px;
+	// margin: auto;
+	// .carousel {
+	// 	.slide {
+	// 		background-color: #999;
+	// 		height: 500px;
+	// 		img {
+	// 			max-height: 100%;
+	// 		}
+	// 	}
+	// }
+	.carousel {
+		.slide {
+			position: relative;
+			min-width: calc(80% - 20px) !important;
+			height: 450px;
+			margin: 0 10px;
+			overflow: hidden;
+			border-radius: 10px;
+			background-color: #f8f8f8;
+			@media (max-width: $max-width) {
+				height: 200px;
+			}
+			&.selected {
+				min-width: calc(80% - 20px) !important;
+				height: 450px;
+				margin-top: 0;
+				margin: 0 10px;
+				@include animate_1();
+				@media (max-width: $max-width) {
+					height: 200px;
+				}
+			}
+			img {
+				// max-width: auto;
+				height: 100%;
+				@include post_center(absolute);
+			}
+		}
+	}
 }

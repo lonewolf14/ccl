@@ -163,6 +163,14 @@ $hg-form: 40px;
 		padding: 0 10px;
 		height: 35px;
 	}
+	&.btn-transparant {
+		background-color: rgba(0,0,0,0);
+		color: #f8f8f8;
+		&:hover {
+			background-color: rgba(0,0,0,0.34);
+			color: #ffff;
+		}
+	}
 	&.btn-circle {
 		width: $hg-form;
 		height: $hg-form;

@@ -88,7 +88,7 @@
 	flex-wrap: wrap;
 	justify-content: space-between;	
 	.df-card {
-		flex: 1 1 calc(33.33% - 1em);
+		flex: 1 1 calc(25% - 1em);
 		margin: .55rem .50em;
 	}
 	@media (max-width: $max-width) {

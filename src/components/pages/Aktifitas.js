@@ -31,8 +31,9 @@ class Pages extends Component {
         <div className="padding-15px"></div>
 
         <div className="width width-center width-500px">
-          <h1 className="txt-site txt-center txt-main margin-15px">Aktifitas</h1>
-          <p className="txt-site txt-center txt-12 txt-primary">
+        <h1 className="txt-site txt-center txt-main margin-top-15px margin-bottom-5px">Aktifitas</h1>
+          <div className="app-line center"></div>
+          <p className="txt-site txt-center txt-12 txt-primary margin-top-15px">
             Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
           </p>
         </div>

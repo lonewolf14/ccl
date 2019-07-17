@@ -44,11 +44,50 @@ class App extends Component {
 
           <div className="header">
             <div className="place">
+              
+              <div className="info">
+                <div className="main grid grid-2x">
+                  <div className="col-1">
+                    <button className="btn btn-small btn-transparant btn-no-radius">
+                      <i className="fa fa-lw fa-phone margin-right-5px" />
+                      <span className="txt-site txt-11 app-desktop">
+                        081-324-589-517 / 081-223-939-056
+                      </span>
+                    </button>
+                    <button className="btn btn-small btn-transparant btn-no-radius">
+                      <i className="fa fa-lw fa-map-marker-alt margin-right-5px" />
+                      <span className="txt-site txt-11 app-desktop">
+                        Jl.Kujang Rompang No.14 Bandung
+                      </span>
+                    </button>
+                  </div>
+                  <div className="col-2 content-right">
+                    <button className="btn btn-small btn-transparant btn-no-radius">
+                      <i className="fa fa-lg fa-envelope margin-right-5px" />
+                      <span className="txt-site txt-11 app-desktop">
+                        cclledeng@yahoo.com
+                      </span>
+                    </button>
+                    <button className="btn btn-small btn-transparant btn-no-radius">
+                      <i className="fab fa-lg fa-facebook" />
+                    </button>
+                    <button className="btn btn-small btn-transparant btn-no-radius">
+                      <i className="fab fa-lg fa-instagram" />
+                    </button>
+                    <button className="btn btn-small btn-transparant btn-no-radius">
+                      <i className="fab fa-lg fa-twitter" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
               <div className="main h-grid">
                 <div className="col-1">
-                  <div className="logo-header">
-                    <h3>Logo</h3>
-                  </div>
+                  <NavLink to={'/'}>
+                    <div className="logo-header">
+                      <h3>Logo</h3>
+                    </div>
+                  </NavLink>
                 </div>
                 <div className="col-2">
                   <div className="h-btn post-top">
@@ -59,27 +98,41 @@ class App extends Component {
                     </button>
                   </div>
                   <ul className={this.state.menuHeader}>
-                    <li onClick={this.opMenu}>
-                      <NavLink to={'/'}>Home</NavLink>
-                    </li>
-                    <li onClick={this.opMenu}>
-                      <NavLink to={'/acara'}>Acara</NavLink>
-                    </li>
-                    <li onClick={this.opMenu}>
-                      <NavLink to={'/penghargaan'}>Penghargaan</NavLink>
-                    </li>
-                    <li onClick={this.opMenu}>
-                      <NavLink to={'/aktifitas'}>Aktifitas</NavLink>
-                    </li>
-                    <li onClick={this.opMenu}>
-                      <NavLink to={'/fasilitas'}>Fasilitas</NavLink>
-                    </li>
-                    <li onClick={this.opMenu}>
-                      <NavLink to={'/program'}>Program</NavLink>
-                    </li>
-                    <li onClick={this.opMenu}>
-                      <NavLink to={'/tentang'}>Tentang Kami</NavLink>
-                    </li>
+                    
+                      <li onClick={this.opMenu}>
+                        <NavLink to={'/home'}>Home</NavLink>
+                      </li>
+                    
+                    
+                      <li onClick={this.opMenu}>
+                        <NavLink to={'/acara'}>Acara</NavLink>
+                      </li>
+                    
+                    
+                      <li onClick={this.opMenu}>
+                        <NavLink to={'/penghargaan'}>Penghargaan</NavLink>
+                      </li>
+                    
+                    
+                      <li onClick={this.opMenu}>
+                        <NavLink to={'/aktifitas'}>Aktifitas</NavLink>
+                      </li>
+                    
+                    
+                      <li onClick={this.opMenu}>
+                        <NavLink to={'/fasilitas'}>Fasilitas</NavLink>
+                      </li>
+                    
+                    
+                      <li onClick={this.opMenu}>
+                        <NavLink to={'/program'}>Program</NavLink>
+                      </li>
+                    
+                    
+                      <li onClick={this.opMenu}>
+                        <NavLink to={'/tentang'}>Tentang Kami</NavLink>
+                      </li>
+                    
                     {/* <li>
                       <NavLink to={'/kontak'}>Kontak</NavLink>
                     </li> */}
@@ -93,6 +146,7 @@ class App extends Component {
             <div>
               {/* router */}
               <Route exact path="/" component={ Home } />
+              <Route exact path="/home" component={ Home } />
               <Route exact path="/acara" component={ Acara } />
               <Route exact path="/aktifitas" component={ Aktifitas } />
               <Route exact path="/fasilitas" component={ Fasilitas } />
@@ -107,9 +161,10 @@ class App extends Component {
             <div className="main">
               <div className="grid grid-2x gap-30px grid-mobile-none">
                 <div className="col-1">
-                  <h1 className="txt-site txt-main margin-bottom-15px">
+                  <h1 className="txt-site txt-main margin-bottom-5px">
                     Tentang Kami
                   </h1>
+                  <div className="app-line margin-bottom-15px"></div>
                   <p className="txt-site txt-14 txt-primary margin-bottom-15px">
                     Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
                   </p>
