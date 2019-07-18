@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Img from 'react-image'
+
 
 // aktivitas
 import aktivitas1 from '../../assets/img/aktivitas/1.jpg'
@@ -49,9 +51,21 @@ class Pages extends Component {
     }
     return(
       <div className="df-card card no-hover">
-          <div 
-            style={{backgroundImage: 'url('+val+')'}}
-            className="image image-full background-dark-grey"></div>
+          <div className="image image-full background-grey">
+              <Img 
+                  src={val}
+                  className="img2 img-height"
+                  loader={
+                    <div className="icn">
+                      <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                    </div>
+                  }
+                  unloader={
+                    <div className="icn">
+                      <i className="color-green post-center fa fa-2x fa-times" />
+                    </div>
+                  } />
+          </div>
           {info}
       </div>
     )
@@ -77,9 +91,21 @@ class Pages extends Component {
 
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px aktifity-padding">
             <div className="col-1">
-              <div 
-                style={{backgroundImage: 'url('+aktivitas2+')'}}
-                className="image image-middle image-radius background-dark-grey"></div>
+              <div className="image image-middle image-radius background-grey">
+                      <Img 
+                        src={aktivitas2}
+                        className="img2"
+                        loader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                          </div>
+                        }
+                        unloader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-times" />
+                          </div>
+                        } />
+              </div>
             </div>
             <div className="col-2">
               <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-6px">
@@ -107,9 +133,21 @@ class Pages extends Component {
 
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px aktifity-padding">
             <div className="col-1">
-              <div 
-                style={{backgroundImage: 'url('+aktivitas4+')'}}
-                className="image image-middle image-radius background-dark-grey"></div>
+              <div className="image image-middle image-radius background-grey">
+                      <Img 
+                        src={aktivitas4}
+                        className="img2"
+                        loader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                          </div>
+                        }
+                        unloader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-times" />
+                          </div>
+                        } />
+              </div>
             </div>
             <div className="col-2">
               <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-6px">
@@ -134,9 +172,21 @@ class Pages extends Component {
 
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px aktifity-padding">
             <div className="col-1">
-              <div 
-                style={{backgroundImage: 'url('+aktivitas2+')'}}
-                className="image image-middle image-radius background-dark-grey"></div>
+              <div className="image image-middle image-radius background-grey">
+                      <Img 
+                        src={aktivitas18}
+                        className="img2"
+                        loader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                          </div>
+                        }
+                        unloader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-times" />
+                          </div>
+                        } />
+              </div>
             </div>
             <div className="col-2">
               <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-6px">
@@ -164,10 +214,21 @@ class Pages extends Component {
 
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px aktifity-padding">
             <div className="col-1">
-              <div 
-                style={{backgroundImage: 'url('+aktivitas16+')'}}
-                className="image image-middle image-radius background-dark-grey"></div>
-              
+              <div className="image image-middle image-radius background-grey">
+                      <Img 
+                        src={aktivitas16}
+                        className="img2"
+                        loader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                          </div>
+                        }
+                        unloader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-times" />
+                          </div>
+                        } />
+              </div>
             </div>
             <div className="col-2">
               <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-6px">
@@ -192,9 +253,21 @@ class Pages extends Component {
 
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px aktifity-padding">
             <div className="col-1">
-              <div 
-                style={{backgroundImage: 'url('+aktivitas12+')'}}
-                className="image image-middle image-radius background-dark-grey"></div>
+              <div className="image image-middle image-radius background-grey">
+                      <Img 
+                        src={aktivitas12}
+                        className="img2"
+                        loader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                          </div>
+                        }
+                        unloader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-times" />
+                          </div>
+                        } />
+              </div>
             </div>
             <div className="col-2">
               <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-6px">

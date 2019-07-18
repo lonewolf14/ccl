@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Img from 'react-image'
 
 // acara
 import acara1 from '../../assets/img/acara/1.jpg'
@@ -53,7 +54,19 @@ class Pages extends Component {
     return(
       <div className="df-card card no-border margin-bottom-15px">
           <div className="image background-white">
-            <img className="img image-radius" src={val} />
+            <Img 
+                  src={val}
+                  className="img2 img-normal"
+                  loader={
+                    <div className="icn">
+                      <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                    </div>
+                  }
+                  unloader={
+                    <div className="icn">
+                      <i className="color-green post-center fa fa-2x fa-times" />
+                    </div>
+                  } />
           </div>
           {info}
         </div>

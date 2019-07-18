@@ -325,6 +325,9 @@ a {
 				// 	width: 100%;
 				// }
 			}
+			.icn {
+				@include post_center(absolute);
+			}
 		}
 	}
 	// .carousel {

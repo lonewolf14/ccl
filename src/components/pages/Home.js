@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Carousel } from 'react-responsive-carousel'
+import Img from 'react-image'
 
 // banner
 import banner1 from '../../assets/img/banner/1.JPG'
@@ -54,8 +55,21 @@ class Pages extends Component {
     return(
       <div className="df-card">
           <div 
-            style={{backgroundImage: 'url('+val+')'}}
-            className="margin-left-5px margin-right-5px image image-160px image-circle background-dark-grey"></div>
+            className="margin-left-5px margin-right-5px image image-160px image-circle background-grey">
+              <Img 
+                  src={val}
+                  className="img2"
+                  loader={
+                    <div className="icn">
+                      <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                    </div>
+                  }
+                  unloader={
+                    <div className="icn">
+                      <i className="color-green post-center fa fa-2x fa-times" />
+                    </div>
+                  } />
+          </div>
       </div>
     )
   }
@@ -79,9 +93,21 @@ class Pages extends Component {
           </div>
     return(
       <div className="df-card card no-hover">
-          <div 
-            style={{backgroundImage: 'url('+val+')'}}
-            className="image image-middle background-dark-grey"></div>
+          <div className="image image-middle background-grey">
+              <Img 
+                  src={val}
+                  className="img2"
+                  loader={
+                    <div className="icn">
+                      <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                    </div>
+                  }
+                  unloader={
+                    <div className="icn">
+                      <i className="color-green post-center fa fa-2x fa-times" />
+                    </div>
+                  } />
+          </div>
       </div>
     )
   }
@@ -99,16 +125,52 @@ class Pages extends Component {
             showIndicators={true}
             showStatus={false}
             >
-                <div>
-                    <img src={banner1} />
+                <div style={{height: '100%'}}>
+                    <Img 
+                      src={banner1}
+                      className="img2"
+                      loader={
+                        <div className="icn">
+                          <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                        </div>
+                      }
+                      unloader={
+                        <div className="icn">
+                          <i className="color-green post-center fa fa-2x fa-times" />
+                        </div>
+                      } />
                     {/* <p className="legend">Legend 1</p> */}
                 </div>
-                <div>
-                    <img src={banner2} />
+                <div style={{height: '100%'}}>
+                    <Img 
+                      src={banner2}
+                      className="img2"
+                      loader={
+                        <div className="icn">
+                          <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                        </div>
+                      }
+                      unloader={
+                        <div className="icn">
+                          <i className="color-green post-center fa fa-2x fa-times" />
+                        </div>
+                      } />
                     {/* <p className="legend">Legend 1</p> */}
                 </div>
-                <div>
-                    <img src={banner3} />
+                <div style={{height: '100%'}}>
+                    <Img 
+                      src={banner3}
+                      className="img2"
+                      loader={
+                        <div className="icn">
+                          <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                        </div>
+                      }
+                      unloader={
+                        <div className="icn">
+                          <i className="color-green post-center fa fa-2x fa-times" />
+                        </div>
+                      } />
                     {/* <p className="legend">Legend 1</p> */}
                 </div>
           </Carousel>
@@ -152,14 +214,38 @@ class Pages extends Component {
             <div className="col-1">
               <div className="grid grid-2x gap-15px">
                 <div className="col-1">
-                  <div 
-                    style={{backgroundImage: 'url('+penghargaan1+')'}}
-                    className="margin-15px image image-full image-radius background-dark-grey"></div>
+                  <div className="margin-15px image image-full image-radius background-grey">
+                      <Img 
+                        src={penghargaan1}
+                        className="img2 img-height"
+                        loader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                          </div>
+                        }
+                        unloader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-times" />
+                          </div>
+                        } />
+                  </div>
                 </div>
                 <div className="col-2">
-                  <div 
-                    style={{backgroundImage: 'url('+penghargaan2+')'}}
-                    className="margin-15px image image-full image-radius background-dark-grey"></div>
+                  <div className="margin-15px image image-full image-radius background-grey">
+                      <Img 
+                        src={penghargaan2}
+                        className="img2 img-height"
+                        loader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                          </div>
+                        }
+                        unloader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-times" />
+                          </div>
+                        } />
+                  </div>
                 </div>
               </div>
             </div>
@@ -169,10 +255,10 @@ class Pages extends Component {
               </h1>
               <div className="app-line"></div>
               <p className="txt-site txt-14 txt-primary margin-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                Komunitas celah-celah langit pernah mendapatkan penghargaan, komunitas budaya terbaik se Jawa Barat.
               </p>
-              <p className="txt-site txt-14 txt-primary margin-bottom-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+              <p className="txt-site txt-14 txt-primary margin-15px">
+                Komunitas CCL, mendapatkan penghargaan lagi tentang masalah lingkungan, menanamkan kesadaran lingkungan melalui kesenian.
               </p>
               <div className="content-right">
                 <Link to={'/penghargaan'}>
@@ -193,10 +279,13 @@ class Pages extends Component {
               </h1>
               <div className="app-line"></div>
               <p className="txt-site txt-14 txt-primary margin-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                Komunitas Celah-Celah Langit (CCL) merupakan komunitas yang bergerak di bidang kesenian, khususnya teater.
               </p>
-              <p className="txt-site txt-14 txt-primary margin-bottom-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+              <p className="txt-site txt-14 txt-primary margin-15px">
+                Selain teater juga ada yang digiati dalam komunitas yaitu sastra, musik, lukis dan pencak silat.
+              </p>
+              <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-bottom-15px">
+                Komunitas ini berlokasi di Kota Bandung tepatnya dibelakang Terminal Ledeng, Bandung Utara.
               </p>
               <div className="content-right">
                 <Link to={'/tentang'}>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Img from 'react-image'
 
 // fasilitas
 import fasilitas1 from '../../assets/img/fasilitas/1.jpg'
@@ -46,9 +47,21 @@ class Pages extends Component {
           </div>
     return(
       <div className="df-card card no-hover">
-          <div 
-            style={{backgroundImage: 'url('+val+')'}}
-            className="image image-full background-dark-grey"></div>
+          <div className="image image-full background-grey">
+              <Img 
+                  src={val}
+                  className="img2 img-height"
+                  loader={
+                    <div className="icn">
+                      <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                    </div>
+                  }
+                  unloader={
+                    <div className="icn">
+                      <i className="color-green post-center fa fa-2x fa-times" />
+                    </div>
+                  } />
+          </div>
       </div>
     )
   }

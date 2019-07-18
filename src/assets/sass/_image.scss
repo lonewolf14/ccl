@@ -143,6 +143,17 @@
 			border-radius: 10px;
 		}
 	}
+	.img2 {
+		@include post_center(absolute);
+		width: 100%;
+		&.img-height {
+			width: auto;
+			height: 100%;
+		}
+		&.img-normal {
+			@include post_none();
+		}
+	}
 	.ttl {
 		@include post_center(absolute);
 		color: $txt-sek-color;

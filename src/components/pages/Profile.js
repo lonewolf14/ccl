@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Carousel } from 'react-responsive-carousel'
+import Img from 'react-image'
 
 // banner
 import banner1 from '../../assets/img/banner/1.JPG'
@@ -29,9 +30,21 @@ class Pages extends Component {
           
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
             <div className="col-1">
-              <div 
-                style={{backgroundImage: 'url('+banner1+')'}}
-                className="image image-middle image-radius background-dark-grey"></div>
+              <div className="image image-middle image-radius background-grey">
+                      <Img 
+                        src={banner1}
+                        className="img2"
+                        loader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                          </div>
+                        }
+                        unloader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-times" />
+                          </div>
+                        } />
+              </div>
             </div>
             <div className="col-2">
               <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-6px">

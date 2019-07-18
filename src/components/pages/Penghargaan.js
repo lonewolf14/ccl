@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Img from 'react-image'
 
 // penghargaan
 import penghargaan1 from '../../assets/img/penghargaan/1.jpg'
@@ -59,9 +60,21 @@ class Pages extends Component {
           
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
             <div className="col-1">
-              <div 
-                style={{backgroundImage: 'url('+penghargaan1+')'}}
-                className="image image-middle image-radius background-dark-grey"></div>
+              <div className="image image-middle image-radius background-grey">
+                      <Img 
+                        src={penghargaan1}
+                        className="img2"
+                        loader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                          </div>
+                        }
+                        unloader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-times" />
+                          </div>
+                        } />
+              </div>
             </div>
             <div className="col-2">
               <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-5px">
@@ -87,9 +100,21 @@ class Pages extends Component {
               </p>
             </div>
             <div className="col-2">
-              <div 
-                style={{backgroundImage: 'url('+penghargaan2+')'}}
-                className="image image-middle image-radius background-dark-grey"></div>
+              <div className="image image-middle image-radius background-grey">
+                      <Img 
+                        src={penghargaan2}
+                        className="img2"
+                        loader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                          </div>
+                        }
+                        unloader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-times" />
+                          </div>
+                        } />
+              </div>
             </div>
           </div>
 
@@ -97,9 +122,21 @@ class Pages extends Component {
 
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
             <div className="col-1">
-              <div 
-                style={{backgroundImage: 'url('+penghargaan4+')'}}
-                className="image image-middle image-radius background-dark-grey"></div>
+              <div className="image image-middle image-radius background-grey">
+                      <Img 
+                        src={penghargaan4}
+                        className="img2"
+                        loader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-circle-notch fa-spin" />
+                          </div>
+                        }
+                        unloader={
+                          <div className="icn">
+                            <i className="color-green post-center fa fa-2x fa-times" />
+                          </div>
+                        } />
+              </div>
             </div>
             <div className="col-2">
               <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-5px">
