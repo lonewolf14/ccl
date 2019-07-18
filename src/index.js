@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import "react-responsive-carousel/lib/styles/carousel.min.css"
 import './assets/icons/fontawesome/css/all.min.css'
 import './assets/sass/app.css'
 import App from './components/App'

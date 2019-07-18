@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Carousel } from 'react-responsive-carousel'
 
 // banner
 import banner1 from '../../assets/img/banner/1.JPG'
@@ -18,7 +19,7 @@ class Pages extends Component {
           </h1>
           <div className="app-line center"></div>
           <p className="txt-site txt-center txt-14 txt-primary txt-font-helvetica margin-top-15px">
-            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+            Tentang Kami
           </p>
         </div>
 
@@ -68,9 +69,32 @@ class Pages extends Component {
               </p>
             </div>
             <div className="col-2">
-              <div 
-                style={{backgroundImage: 'url('+banner2+')'}}
-                className="image image-middle image-radius background-dark-grey"></div>
+              <div style={{borderRadius: '10px', overflow: 'hidden'}}>
+                <Carousel 
+                  infiniteLoop={true} 
+                  showThumbs={false} 
+                  centerMode={false}
+                  autoPlay={false}
+                  showIndicators={true}
+                  showStatus={false}
+                  >
+                  <div 
+                    className="margin-15px" 
+                    style={{height: '250px'}}>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZE2TJBY_ceE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div 
+                    className="margin-15px" 
+                    style={{height: '250px'}}>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5-bLTu260Ho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div 
+                    className="margin-15px" 
+                    style={{height: '250px'}}>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DyrPzbYUd7c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </Carousel>
+              </div>
             </div>
           </div>
 

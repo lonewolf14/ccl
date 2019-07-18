@@ -19,7 +19,8 @@ class App extends Component {
     this.state = {
       btnStatus: true,
       btnIcon: 'fa fa-2x fa-bars',
-      menuHeader: 'menu-header'
+      menuHeader: 'menu-header',
+      popup: 'app-popup'
     }
   }
 
@@ -37,6 +38,22 @@ class App extends Component {
         menuHeader: 'menu-header'
       })
     }
+  }
+
+  opPopup = () => {
+    if (this.state.popup === 'app-popup') { 
+      this.setState({
+        popup: 'app-popup show'
+      })
+    } else {
+      this.setState({
+        popup: 'app-popup'
+      })
+    }
+  }
+
+  componentDidMount() {
+    this.opPopup()
   }
 
   render() {
@@ -156,6 +173,13 @@ class App extends Component {
               <Route exact path="/penghargaan" component={ Penghargaan } />
               <Route exact path="/tentang" component={ Profile } />
               <Route exact path="/program" component={ Program } />
+            </div>
+            <div className={this.state.popup} onClick={this.opPopup}>
+              <div className="a-p-content">
+                <h1 className="txt-site txt-main txt-font-yogyakarta">
+                  Sampurasun
+                </h1>
+              </div>
             </div>
           </div>
           
