@@ -64,7 +64,7 @@ class Pages extends Component {
                 className="image image-middle image-radius background-dark-grey"></div>
             </div>
             <div className="col-2">
-              <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-6px">
+              <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-5px">
                 Penghargaan tentang lingkungan
               </h1>
               <div className="app-line"></div>
@@ -78,7 +78,7 @@ class Pages extends Component {
 
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
             <div className="col-1">
-              <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-6px">
+              <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-5px">
                 Penghargaan Komunitas terbaik
               </h1>
               <div className="app-line"></div>
@@ -102,7 +102,7 @@ class Pages extends Component {
                 className="image image-middle image-radius background-dark-grey"></div>
             </div>
             <div className="col-2">
-              <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-6px">
+              <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-5px">
                 Penghargaan lingkungan
               </h1>
               <div className="app-line"></div>

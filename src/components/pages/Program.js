@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 
-import program1 from '../../assets/img/program/1.JPG'
+import program1 from '../../assets/img/program/1.jpeg'
 import program2 from '../../assets/img/program/2.jpg'
 import program3 from '../../assets/img/program/3.jpg'
+import program4 from '../../assets/img/program/4.jpg'
 
 class Pages extends Component {
   constructor () {
@@ -48,18 +49,90 @@ class Pages extends Component {
           </h1>
           <div className="app-line center"></div>
           <p className="txt-site txt-center txt-14 txt-primary txt-font-helvetica margin-top-15px">
-          Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+            Program yang sudah kami lakukan
           </p>
         </div>
 
         <div className="padding-15px"></div>
 
+
+
         <div>
-          <div className="display-flex">
-            { this.onContent(program1, 'title', 'description') }
-            { this.onContent(program2, 'title', 'description') }
-            { this.onContent(program3, 'title', 'description') }
+
+          <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
+            <div className="col-1">
+              <div 
+                style={{backgroundImage: 'url('+program1+')'}}
+                className="image image-middle image-radius background-dark-grey"></div>
+            </div>
+            <div className="col-2">
+              <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-5px">
+                Ngamumule Budaya
+              </h1>
+              <div className="app-line"></div>
+              <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-15px">
+                Salah satu program komunitas yaitu melestarikan kembali budaya sunda yang hilang atau terlupakan, menyasar anak muda dan generasi muda melalui penyadaran kebudayaan dan pemberdayaan masyarakat melalui jalur kesenian.
+              </p>
+            </div>
           </div>
+
+          <div className="padding-15px"></div>
+
+          <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
+            <div className="col-1">
+              <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-5px">
+                Kesenian Kolektif
+              </h1>
+              <div className="app-line"></div>
+              <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-15px">
+                Keseluruhan kesenian adalah hasil kolektif, dari mulai pendanaan, konsep, dan lain sebagainya, dari kegiatan ini diharapkan seluruh anggota masyarakat dan anggota komunitas dapat terangsang daya kreatifitas dan imajinasinya.
+              </p>
+            </div>
+            <div className="col-2">
+              <div 
+                style={{backgroundImage: 'url('+program2+')'}}
+                className="image image-middle image-radius background-dark-grey"></div>
+            </div>
+          </div>
+
+          <div className="padding-15px"></div>
+
+          <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
+            <div className="col-1">
+              <div 
+                style={{backgroundImage: 'url('+program3+')'}}
+                className="image image-middle image-radius background-dark-grey"></div>
+            </div>
+            <div className="col-2">
+              <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-5px">
+                Kesadaran Akan Lingkungan
+              </h1>
+              <div className="app-line"></div>
+              <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-15px">
+                Selain bergerak di bidang budaya melalui jalur kesenian teater dan lainnya, komunitas juga memberikan edukasi masalah lingkungan.
+              </p>
+            </div>
+          </div>
+
+          <div className="padding-15px"></div>
+
+          <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
+            <div className="col-1">
+              <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-5px">
+                Belajar Bersama Maestro (BBM)
+              </h1>
+              <div className="app-line"></div>
+              <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-15px">
+                KEMDIKBUD memiliki program pembelajaran kesenian seluruh Indonesia bersama pakar-pakar atau seniman, pada komunitas CCL, siswa BBM memiliki kesempatan belajar teater dan sastra.
+              </p>
+            </div>
+            <div className="col-2">
+              <div 
+                style={{backgroundImage: 'url('+program4+')'}}
+                className="image image-middle image-radius background-dark-grey"></div>
+            </div>
+          </div>
+
         </div>
 
         <div className="padding-15px"></div>

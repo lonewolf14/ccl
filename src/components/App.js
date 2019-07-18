@@ -188,14 +188,17 @@ class App extends Component {
               <div className="grid grid-2x gap-30px grid-mobile-none">
                 <div className="col-1">
                   <h1 className="txt-site txt-main txt-font-nova margin-bottom-5px">
-                    Celah Celah Langit
+                    Celah-Celah Langit
                   </h1>
                   <div className="app-line margin-bottom-15px"></div>
-                  <p className="txt-site txt-14 txt-primary margin-bottom-15px">
-                    Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                  <p className="txt-site txt-12 txt-primary margin-bottom-15px">
+                    Komunitas Celah-Celah Langit (CCL) merupakan komunitas yang bergerak di bidang kesenian, khususnya teater.
                   </p>
-                  <p className="txt-site txt-14 txt-primary margin-bottom-15px">
-                    Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                  <p className="txt-site txt-12 txt-primary margin-bottom-15px">
+                    Komunitas Celah-Celah Langit CCL adalah komunitas yang Kolektif, gotong royong dan “sauyunan”.
+                  </p>
+                  <p className="txt-site txt-12 txt-primary margin-bottom-15px">
+                    Komunitas Celah-Celah CCL adalah komunitas nirlaba, tanpa ada sepeserpun benefit yang dihasilkan. 
                   </p>
                 </div>
                 <div className="col-2">

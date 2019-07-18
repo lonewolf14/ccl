@@ -30,7 +30,7 @@ import fasilitas2 from '../../assets/img/fasilitas/23.jpg'
 import fasilitas3 from '../../assets/img/fasilitas/3.JPG'
 
 // program
-import program1 from '../../assets/img/program/1.JPG'
+import program1 from '../../assets/img/program/1.jpeg'
 import program2 from '../../assets/img/program/2.jpg'
 import program3 from '../../assets/img/program/3.jpg'
 

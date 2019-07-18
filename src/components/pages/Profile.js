@@ -35,17 +35,17 @@ class Pages extends Component {
             </div>
             <div className="col-2">
               <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-6px">
-                Title
+                Celah-Celah Langit
               </h1>
               <div className="app-line"></div>
               <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                Komunitas Celah-Celah Langit (CCL) merupakan komunitas yang bergerak di bidang kesenian, khususnya teater.  
               </p>
               <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-bottom-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                Selain teater juga ada yang digiati dalam komunitas yaitu sastra, musik, lukis dan pencak silat.
               </p>
               <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-bottom-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                Komunitas ini berlokasi di Kota Bandung tepatnya dibelakang Terminal Ledeng, Bandung Utara.
               </p>
             </div>
           </div>
@@ -55,17 +55,17 @@ class Pages extends Component {
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
             <div className="col-1">
               <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-6px">
-                Title
+                Celah-Celah Langit
               </h1>
               <div className="app-line"></div>
               <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                Komunitas CCL adalah komunitas yang Kolektif, gotong royong dan “sauyunan”.
+              </p>
+              <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-15px">
+                Komunitas CCL adalah komunitas nirlaba, tanpa ada sepeserpun benefit yang dihasilkan. 
               </p>
               <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-bottom-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-              </p>
-              <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-bottom-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                Namun, dengan semangat, kerja keras dan kekompakan para anggota dan warga sekitar membuat komunitas ini bertahan dari tahun 1980 an hingga kini.
               </p>
             </div>
             <div className="col-2">
