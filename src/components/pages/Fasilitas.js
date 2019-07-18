@@ -41,10 +41,14 @@ class Pages extends Component {
     //     </div>
     //   )
     // }
-    var info = <div className="padding-15px">
+    if (title !== '' || desc !== '') { 
+      var info = <div className="padding-15px">
             <h3 className="txt-site txt-main txt-font-nova">{ title }</h3>
             <p className="txt-site txt-12 txt-primary txt-font-helvetica">{ desc }</p>
           </div>
+    } else {
+      var info = <div></div>
+    }
     return(
       <div className="df-card card no-hover">
           <div className="image image-full background-grey">
@@ -62,6 +66,7 @@ class Pages extends Component {
                     </div>
                   } />
           </div>
+          {info}
       </div>
     )
   }
@@ -86,24 +91,24 @@ class Pages extends Component {
 
         <div>
           <div className="display-flex">
-            { this.onContent(fasilitas1, 'title', 'description') }
-            { this.onContent(fasilitas2, 'title', 'description') }
-            { this.onContent(fasilitas3, 'title', 'description') }
-            { this.onContent(fasilitas4, 'title', 'description') }
-            { this.onContent(fasilitas15, 'title', 'description') }
-            { this.onContent(fasilitas6, 'title', 'description') }
-            { this.onContent(fasilitas7, 'title', 'description') }
-            { this.onContent(fasilitas8, 'title', 'description') }
-            { this.onContent(fasilitas9, 'title', 'description') }
-            { this.onContent(fasilitas10, 'title', 'description') }
-            { this.onContent(fasilitas11, 'title', 'description') }
-            { this.onContent(fasilitas12, 'title', 'description') }
-            { this.onContent(fasilitas13, 'title', 'description') }
-            { this.onContent(fasilitas14, 'title', 'description') }
-            { this.onContent(fasilitas16, 'title', 'description') }
-            { this.onContent(fasilitas17, 'title', 'description') }
-            { this.onContent(fasilitas18, 'title', 'description') }
-            { this.onContent(fasilitas19, 'title', 'description') }
+            { this.onContent(fasilitas1, 'Seperangkat efek dan sound sistem untuk kepentingan pementasan', '') }
+            { this.onContent(fasilitas2, 'Lighting untung pementasan malam hari', '') }
+            { this.onContent(fasilitas3, 'Sound controlling', '') }
+            { this.onContent(fasilitas4, 'Backstage atau saung untuk kepentingan makeup artist dan istirahat anggota', '') }
+            { this.onContent(fasilitas15, 'Bangku tribun penonton berkapasitas 400 orang', '') }
+            { this.onContent(fasilitas6, 'Perpustakaan kecil', '') }
+            { this.onContent(fasilitas7, 'Tribun penonton', '') }
+            {/* this.onContent(fasilitas8, 'title', 'description') */}
+            {/* this.onContent(fasilitas9, 'title', 'description') */}
+            { this.onContent(fasilitas10, 'Gazebo untuk keperluan brifing dan diskusi naskah', '') }
+            {/* this.onContent(fasilitas11, 'title', 'description') */}
+            {/* this.onContent(fasilitas12, 'title', 'description') */}
+            { this.onContent(fasilitas13, 'Parkiran motor', '') }
+            {/* this.onContent(fasilitas14, 'title', 'description') */}
+            {/* this.onContent(fasilitas16, 'title', 'description') */}
+            {/* this.onContent(fasilitas17, 'title', 'description') */}
+            { this.onContent(fasilitas18, 'Properti pementasan', '') }
+            {/* this.onContent(fasilitas19, 'title', 'description') */}
           </div>
         </div>
 
