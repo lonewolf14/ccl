@@ -95,14 +95,14 @@ class Pages extends Component {
             { this.onContent(fasilitas2, 'Lighting untung pementasan malam hari', '') }
             { this.onContent(fasilitas3, 'Sound controlling', '') }
             { this.onContent(fasilitas4, 'Backstage atau saung untuk kepentingan makeup artist dan istirahat anggota', '') }
+            { this.onContent(fasilitas8, '', '') }
             { this.onContent(fasilitas15, 'Bangku tribun penonton berkapasitas 400 orang', '') }
-            { this.onContent(fasilitas6, 'Perpustakaan kecil', '') }
             { this.onContent(fasilitas7, 'Tribun penonton', '') }
-            {/* this.onContent(fasilitas8, 'title', 'description') */}
+            { this.onContent(fasilitas6, 'Perpustakaan kecil', '') }
+            { this.onContent(fasilitas12, '', '') }
             {/* this.onContent(fasilitas9, 'title', 'description') */}
             { this.onContent(fasilitas10, 'Gazebo untuk keperluan brifing dan diskusi naskah', '') }
             {/* this.onContent(fasilitas11, 'title', 'description') */}
-            {/* this.onContent(fasilitas12, 'title', 'description') */}
             { this.onContent(fasilitas13, 'Parkiran motor', '') }
             {/* this.onContent(fasilitas14, 'title', 'description') */}
             {/* this.onContent(fasilitas16, 'title', 'description') */}
