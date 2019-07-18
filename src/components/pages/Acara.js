@@ -14,6 +14,9 @@ import acara10 from '../../assets/img/acara/10.jpg'
 import acara11 from '../../assets/img/acara/11.jpg'
 import acara12 from '../../assets/img/acara/12.jpg'
 import acara13 from '../../assets/img/acara/13.jpg'
+import acara14 from '../../assets/img/acara/14.jpg'
+import acara15 from '../../assets/img/acara/15.jpg'
+import acara16 from '../../assets/img/acara/16.jpg'
 
 class Pages extends Component {
   constructor () {
@@ -38,15 +41,21 @@ class Pages extends Component {
     //     </div>
     //   )
     // }
+    if (title !== '' || desc !== '') { 
+      var info = <div className="float padding-15px">
+            <h3 className="txt-site txt-main txt-font-nova">{title}</h3>
+            <p className="txt-site txt-12 txt-font-helvetica txt-primary">{desc}</p>
+          </div>
+    } else {
+      var info = <div></div>
+    }
+
     return(
       <div className="df-card card no-border margin-bottom-15px">
           <div className="image background-white">
             <img className="img image-radius" src={val} />
           </div>
-          <div className="float padding-15px">
-            <h3 className="txt-site txt-main">{title}</h3>
-            <p className="txt-site txt-11 txt-primary">{desc}</p>
-          </div>
+          {info}
         </div>
     )
   }
@@ -58,30 +67,35 @@ class Pages extends Component {
         <div className="padding-15px"></div>
 
         <div className="width width-center width-500px">
-          <h1 className="txt-site txt-center txt-main margin-top-15px margin-bottom-5px">Acara</h1>
+          <h1 className="txt-site txt-center txt-main txt-font-nova margin-top-15px margin-bottom-5px">
+            Acara
+          </h1>
           <div className="app-line center"></div>
-          <p className="txt-site txt-center txt-16 txt-primary margin-top-15px">
+          <p className="txt-site txt-center txt-14 txt-primary txt-font-helvetica margin-top-15px">
             Acara yang sudah kami selenggarakan.
           </p>
         </div>
 
-        <div className="padding-10px"></div>
+        <div className="padding-20px"></div>
 
-        <div className="padding-15px app-mobile-none-padding">
+        <div>
           <div className="display-masonry">
-            { this.onContent(acara1, 'title', 'description') }
-            { this.onContent(acara2, 'title', 'description') }
-            { this.onContent(acara3, 'title', 'description') }
-            { this.onContent(acara4, 'title', 'description') }
-            { this.onContent(acara5, 'title', 'description') }
-            { this.onContent(acara6, 'title', 'description') }
-            { this.onContent(acara7, 'title', 'description') }
-            { this.onContent(acara8, 'title', 'description') }
-            { this.onContent(acara9, 'title', 'description') }
-            { this.onContent(acara10, 'title', 'description') }
-            { this.onContent(acara11, 'title', 'description') }
-            { this.onContent(acara12, 'title', 'description') }
-            { this.onContent(acara13, 'title', 'description') }
+            { this.onContent(acara1, 'Acara kolaborasi 2 band yang diselenggarakan oleh Event Organizer Rumah Kedua dan bertempat di CCL', '') }
+            { this.onContent(acara2, 'Acara teater untuk memperingati hari air sedunia.', '') }
+            { this.onContent(acara3, 'Teater tentang nasib petani di kota besar.', '') }
+            { this.onContent(acara4, 'Acara Ngabuburit dan dakwah.', '') }
+            { this.onContent(acara5, 'Acara amal gempa Lombok.', '') }
+            { this.onContent(acara6, 'Karya tugas akhir ISBI Bandung yang diselenggarakan dan didukung oleh CCL', '') }
+            {/* this.onContent(acara7, '', '') */}
+            { this.onContent(acara8, 'Memperingati hari musik sedunia.', '') }
+            { this.onContent(acara9, 'Acara Amal gempa banten dan lampung.', '') }
+            { this.onContent(acara10, '', '') }
+            { this.onContent(acara11, '', '') }
+            { this.onContent(acara12, '', '') }
+            { this.onContent(acara13, '', '') }
+            { this.onContent(acara14, '', '') }
+            { this.onContent(acara15, 'Kolaborasi dua kebudayaan Indonesia-Meksiko.', '') }
+            { this.onContent(acara16, 'Acara “Santri” teater dari ke 12 provinsi terpilih.', '') }
           </div>
         </div>
 

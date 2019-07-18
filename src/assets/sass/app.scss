@@ -26,7 +26,7 @@ $mobile-width: calc(100% - 30px);
 	border: 0;
 	margin: 0;
 	outline: none;
-	font-family: "FontFirst2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "helvetica", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 html {
@@ -37,6 +37,17 @@ html {
 
 a {
 	text-decoration: none;
+}
+
+.aktifity-padding {
+	padding: 0 10px;
+	@media (max-width: $max-width) {
+		padding: 0 0;
+	}
+}
+
+.cursor-pointer {
+	cursor: pointer;
 }
 
 .app-line {
@@ -137,6 +148,7 @@ a {
 		width: 100%;
 		padding: 30px 0;
 		background-color: #f5f5f5;
+		border-top: 4px $min-color solid;
 		// color: #fff;
 		// * {
 		// 	color: #fff !important;
@@ -150,6 +162,15 @@ a {
 	margin: auto;
 	@media (max-width: $max-width) {
 		width: $mobile-width;
+	}
+}
+
+.main-second {
+	position: relative;
+	width: $main-width;
+	margin: auto;
+	@media (max-width: $max-width) {
+		width: 100%;
 	}
 }
 
@@ -191,7 +212,8 @@ a {
 			height: $panel-height - 35px;
 			line-height: $panel-height - 35px;
 			padding: 0 10px;
-			font-size: 10.5pt;
+			font-size: 14pt;
+			font-family: "nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 			text-transform: capitalize;
 			color: $txt-84-color;
 			&:hover {
@@ -215,7 +237,11 @@ a {
 	position: relative;
 	width: 100%;
 	height: 50px;
-	@include grid_2x(1fr, 100px);
+	@include grid_2x(1fr, 1fr);
+	@media (max-width: $max-width) {
+		width: calc(100% - 20px);
+		padding: 0 10px;
+	}
 	.col-1 {
 		@include column_n(1);
 	}
@@ -224,7 +250,7 @@ a {
 		text-align: right;
 	}
 	.t-l-tittle {
-		font-size: 14pt;
+		font-size: 16pt;
 		font-weight: 600;
 		line-height: 30px;
 		margin-top: 5px;
@@ -253,6 +279,9 @@ a {
 	}
 	.carousel {
 		height: 500px;
+		@media (max-width: $max-width) {
+			height: 250px
+		}
 		.slide {
 			// padding-bottom: 50%;
 			height: 500px;

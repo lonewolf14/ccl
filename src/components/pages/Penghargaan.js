@@ -44,18 +44,18 @@ class Pages extends Component {
         <div className="padding-15px"></div>
 
         <div className="width width-center width-500px">
-          <h1 className="txt-site txt-center txt-main margin-top-15px margin-bottom-5px">
+          <h1 className="txt-site txt-center txt-main txt-font-nova margin-top-15px margin-bottom-5px">
             Penghargaan
           </h1>
           <div className="app-line center"></div>
-          <p className="txt-site txt-center txt-16 txt-primary margin-top-15px">
+          <p className="txt-site txt-center txt-14 txt-primary txt-font-helvetica margin-top-15px">
             Penghargaan yang sudah kami dapatkan.
           </p>
         </div>
 
-        <div className="padding-10px"></div>
+        <div className="padding-15px"></div>
 
-        <div className="padding-15px app-mobile-none-padding">
+        <div>
           
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
             <div className="col-1">
@@ -64,14 +64,12 @@ class Pages extends Component {
                 className="image image-middle image-radius background-dark-grey"></div>
             </div>
             <div className="col-2">
-              <h1 className="txt-site txt-main margin-15px">
-                Title
+              <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-6px">
+                Penghargaan tentang lingkungan
               </h1>
-              <p className="txt-site txt-14 txt-primary margin-bottom-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-              </p>
-              <p className="txt-site txt-14 txt-primary margin-bottom-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+              <div className="app-line"></div>
+              <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-15px">
+                Komunitas celah-celah langit pernah mendapatkan penghargaan, edukasi tentang lingkungan melalui teater bertema “Air”.
               </p>
             </div>
           </div>
@@ -80,14 +78,12 @@ class Pages extends Component {
 
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
             <div className="col-1">
-              <h1 className="txt-site txt-main margin-15px">
-                Title
+              <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-6px">
+                Penghargaan Komunitas terbaik
               </h1>
-              <p className="txt-site txt-14 txt-primary margin-bottom-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-              </p>
-              <p className="txt-site txt-14 txt-primary margin-bottom-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+              <div className="app-line"></div>
+              <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-15px">
+                Komunitas celah-celah langit pernah mendapatkan penghargaan, komunitas budaya terbaik se Jawa Barat.
               </p>
             </div>
             <div className="col-2">
@@ -102,43 +98,19 @@ class Pages extends Component {
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
             <div className="col-1">
               <div 
-                style={{backgroundImage: 'url('+penghargaan3+')'}}
-                className="image image-middle image-radius background-dark-grey"></div>
-            </div>
-            <div className="col-2">
-              <h1 className="txt-site txt-main margin-15px">
-                Title
-              </h1>
-              <p className="txt-site txt-14 txt-primary margin-bottom-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-              </p>
-              <p className="txt-site txt-14 txt-primary margin-bottom-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-              </p>
-            </div>
-          </div>
-
-          <div className="padding-15px"></div>
-
-          <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
-            <div className="col-1">
-              <h1 className="txt-site txt-main margin-15px">
-                Title
-              </h1>
-              <p className="txt-site txt-14 txt-primary margin-bottom-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-              </p>
-              <p className="txt-site txt-14 txt-primary margin-bottom-15px">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-              </p>
-            </div>
-            <div className="col-2">
-              <div   
                 style={{backgroundImage: 'url('+penghargaan4+')'}}
                 className="image image-middle image-radius background-dark-grey"></div>
             </div>
+            <div className="col-2">
+              <h1 className="txt-site txt-main txt-font-nova margin-top-15px margin-bottom-6px">
+                Penghargaan lingkungan
+              </h1>
+              <div className="app-line"></div>
+              <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-15px">
+                Komunitas CCL, mendapatkan penghargaan lagi tentang masalah lingkungan, menanamkan kesadaran lingkungan melalui kesenian.
+              </p>
+            </div>
           </div>
-
         </div>
 
         <div className="padding-15px"></div>

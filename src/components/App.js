@@ -18,7 +18,7 @@ class App extends Component {
     super()
     this.state = {
       btnStatus: true,
-      btnIcon: 'fa fa-lg fa-bars',
+      btnIcon: 'fa fa-2x fa-bars',
       menuHeader: 'menu-header'
     }
   }
@@ -27,13 +27,13 @@ class App extends Component {
     if (this.state.btnStatus === true) {
       this.setState({
         btnStatus: false,
-        btnIcon: 'fa fa-lg fa-times',
+        btnIcon: 'fa fa-2x fa-times',
         menuHeader: 'menu-header active'
       })
     } else {
       this.setState({
         btnStatus: true,
-        btnIcon: 'fa fa-lg fa-bars',
+        btnIcon: 'fa fa-2x fa-bars',
         menuHeader: 'menu-header'
       })
     }
@@ -163,7 +163,7 @@ class App extends Component {
             <div className="main">
               <div className="grid grid-2x gap-30px grid-mobile-none">
                 <div className="col-1">
-                  <h1 className="txt-site txt-main margin-bottom-5px">
+                  <h1 className="txt-site txt-main txt-font-nova margin-bottom-5px">
                     Celah Celah Langit
                   </h1>
                   <div className="app-line margin-bottom-15px"></div>

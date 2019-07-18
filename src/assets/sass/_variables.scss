@@ -28,6 +28,21 @@
     src: url("../fonts/Quicksand/Quicksand-Regular.ttf");
 }
 
+@font-face {
+    font-family: "helvetica";
+    src: url("../fonts/Helvetica/Helvetica.ttf");
+}
+
+@font-face {
+    font-family: "nova";
+    src: url("../fonts/Nova/Nova-Regular.ttf");
+}
+
+@font-face {
+    font-family: "yogyakarta";
+    src: url("../fonts/Yogyakarta/Jogjakartype.ttf");
+}
+
 //variable
 $col-full : 800px;
 $max-width : 800px;
