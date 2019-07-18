@@ -5,10 +5,10 @@
 	background-repeat: no-repeat;
 	overflow: hidden;
 	// background-color: #f0f0f0;
-	img {
-		@include post_center(relative);
-		width: 100%;
-	}
+	// img {
+	// 	@include post_center(relative);
+	// 	width: 100%;
+	// }
 	&.no-bg-color {
 		background-color: rgba(0,0,0,0);
 	}
@@ -136,8 +136,12 @@
 		margin: auto;
 	}
 	.img {
-		@include post_center(absolute);
-		height: 100%;
+		// @include post_center(absolute);
+		position: relative;
+		width: 100%;
+		&.image-radius {
+			border-radius: 10px;
+		}
 	}
 	.ttl {
 		@include post_center(absolute);

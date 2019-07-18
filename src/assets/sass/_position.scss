@@ -140,3 +140,11 @@
 		display: block;
 	}
 }
+
+.display-masonry {
+	columns: 3 300px;
+	columns-gap: 1rem;
+	.df-card {
+		display: inline-block;
+	}
+}

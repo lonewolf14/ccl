@@ -20,6 +20,9 @@
             box-shadow: 0 0 0 0;
         }
     }
+    &.no-border {
+        border: 0 #fff solid;
+    }
     &.mobile-minimum {
         @media (max-width: $max-width) {
             min-width: 1200px;

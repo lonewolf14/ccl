@@ -1,5 +1,11 @@
 import React, { Component } from 'react'
 
+// penghargaan
+import penghargaan1 from '../../assets/img/penghargaan/1.jpg'
+import penghargaan2 from '../../assets/img/penghargaan/2.jpg'
+import penghargaan3 from '../../assets/img/penghargaan/3.jpg'
+import penghargaan4 from '../../assets/img/penghargaan/4.jpg'
+
 class Pages extends Component {
 
   constructor () {
@@ -7,29 +13,29 @@ class Pages extends Component {
     this.state = {}
   }
 
-  onContent = (val) => {
-    var dt = []
-    for (let index = 0; index < val; index++) {
-      dt.push(
-        <div className="df-card card">
-          <div className="grid grid-2x gap-30px">
-            <div className="col-1">
-              <div className="image image-full background-dark-grey"></div>
-            </div>
-            <div className="col-2">
-              <h3 className="txt-site txt-main">Title</h3>
-              <p className="txt-site txt-11 txt-primary">
-              Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-              </p>
-            </div>
-          </div>
-        </div>
-      )
-    }
-    return(
-      dt
-    )
-  }
+  // onContent = (val) => {
+  //   var dt = []
+  //   for (let index = 0; index < val; index++) {
+  //     dt.push(
+  //       <div className="df-card card">
+  //         <div className="grid grid-2x gap-30px">
+  //           <div className="col-1">
+  //             <div className="image image-full background-dark-grey"></div>
+  //           </div>
+  //           <div className="col-2">
+  //             <h3 className="txt-site txt-main">Title</h3>
+  //             <p className="txt-site txt-11 txt-primary">
+  //               Penghargaan yang sudah kami dapatkan.
+  //             </p>
+  //           </div>
+  //         </div>
+  //       </div>
+  //     )
+  //   }
+  //   return(
+  //     dt
+  //   )
+  // }
 
   render() {
     return (
@@ -42,8 +48,8 @@ class Pages extends Component {
             Penghargaan
           </h1>
           <div className="app-line center"></div>
-          <p className="txt-site txt-center txt-12 txt-primary margin-top-15px">
-            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+          <p className="txt-site txt-center txt-16 txt-primary margin-top-15px">
+            Penghargaan yang sudah kami dapatkan.
           </p>
         </div>
 
@@ -53,7 +59,9 @@ class Pages extends Component {
           
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
             <div className="col-1">
-              <div className="image image-middle image-radius background-dark-grey"></div>
+              <div 
+                style={{backgroundImage: 'url('+penghargaan1+')'}}
+                className="image image-middle image-radius background-dark-grey"></div>
             </div>
             <div className="col-2">
               <h1 className="txt-site txt-main margin-15px">
@@ -83,7 +91,9 @@ class Pages extends Component {
               </p>
             </div>
             <div className="col-2">
-              <div className="image image-middle image-radius background-dark-grey"></div>
+              <div 
+                style={{backgroundImage: 'url('+penghargaan2+')'}}
+                className="image image-middle image-radius background-dark-grey"></div>
             </div>
           </div>
 
@@ -91,7 +101,9 @@ class Pages extends Component {
 
           <div className="grid grid-2x gap-30px grid-mobile-none margin-15px">
             <div className="col-1">
-              <div className="image image-middle image-radius background-dark-grey"></div>
+              <div 
+                style={{backgroundImage: 'url('+penghargaan3+')'}}
+                className="image image-middle image-radius background-dark-grey"></div>
             </div>
             <div className="col-2">
               <h1 className="txt-site txt-main margin-15px">
@@ -121,7 +133,9 @@ class Pages extends Component {
               </p>
             </div>
             <div className="col-2">
-              <div className="image image-middle image-radius background-dark-grey"></div>
+              <div   
+                style={{backgroundImage: 'url('+penghargaan4+')'}}
+                className="image image-middle image-radius background-dark-grey"></div>
             </div>
           </div>
 

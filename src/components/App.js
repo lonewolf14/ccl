@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, NavLink, HashRouter } from 'react-router-dom'
 
+import logo from '../assets/img/logo/1.png'
+
 import Home from '../components/pages/Home'
 import Acara from '../components/pages/Acara'
 import Aktifitas from '../components/pages/Aktifitas'
@@ -85,7 +87,7 @@ class App extends Component {
                 <div className="col-1">
                   <NavLink to={'/'}>
                     <div className="logo-header">
-                      <h3>Logo</h3>
+                      <div style={{backgroundImage: 'url('+logo+')'}} className="image image-60px"></div>
                     </div>
                   </NavLink>
                 </div>
@@ -162,7 +164,7 @@ class App extends Component {
               <div className="grid grid-2x gap-30px grid-mobile-none">
                 <div className="col-1">
                   <h1 className="txt-site txt-main margin-bottom-5px">
-                    Tentang Kami
+                    Celah Celah Langit
                   </h1>
                   <div className="app-line margin-bottom-15px"></div>
                   <p className="txt-site txt-14 txt-primary margin-bottom-15px">
