@@ -5,7 +5,6 @@ import Img from 'react-image'
 import penghargaan1 from '../../assets/img/penghargaan/1.jpg'
 import penghargaan2 from '../../assets/img/penghargaan/2.jpg'
 import penghargaan3 from '../../assets/img/penghargaan/3.jpg'
-import penghargaan4 from '../../assets/img/penghargaan/4.jpg'
 
 class Pages extends Component {
 
@@ -124,7 +123,7 @@ class Pages extends Component {
             <div className="col-1">
               <div className="image image-middle image-radius background-grey">
                       <Img 
-                        src={penghargaan4}
+                        src={penghargaan3}
                         className="img2"
                         loader={
                           <div className="icn">

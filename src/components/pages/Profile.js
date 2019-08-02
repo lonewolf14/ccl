@@ -3,8 +3,8 @@ import { Carousel } from 'react-responsive-carousel'
 import Img from 'react-image'
 
 // banner
-import banner1 from '../../assets/img/banner/1.JPG'
-import banner2 from '../../assets/img/banner/2.JPG'
+import banner1 from '../../assets/img/banner/1.jpg'
+import banner2 from '../../assets/img/banner/2.jpg'
 import banner3 from '../../assets/img/banner/3.jpg'
 
 class Pages extends Component {
@@ -20,7 +20,9 @@ class Pages extends Component {
           </h1>
           <div className="app-line center"></div>
           <p className="txt-site txt-center txt-14 txt-primary txt-font-helvetica margin-top-15px">
-            Tentang Kami
+            Kami tunggu partisipasi dalam bentuk apapun termasuk dukungan material.
+            <br />
+            No Rek. <b className="color-post">309801376</b> BNI atas nama Celah-Celah Langit
           </p>
         </div>
 

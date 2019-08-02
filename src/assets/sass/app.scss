@@ -77,6 +77,11 @@ a {
 		@media (max-width: $max-width) {
 			width: calc(100% - 60px);
 		}
+		.close {
+			position: absolute;
+			top: -15px;
+			right: -15px;
+		}
 	}
 }
 
@@ -183,6 +188,18 @@ a {
 		// * {
 		// 	color: #fff !important;
 		// }
+		.footer-link {
+			position: relative;
+			width: 100%;
+			display: block;
+			margin: 20px 0;
+			@include animate_1();
+			&:hover {
+				@include animate_1();
+				width: calc(100% - 15px);
+				padding-left: 15px;
+			}
+		}
 	}
 }
 

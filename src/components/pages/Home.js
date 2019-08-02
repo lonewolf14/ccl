@@ -4,8 +4,8 @@ import { Carousel } from 'react-responsive-carousel'
 import Img from 'react-image'
 
 // banner
-import banner1 from '../../assets/img/banner/1.JPG'
-import banner2 from '../../assets/img/banner/2.JPG'
+import banner1 from '../../assets/img/banner/1.jpg'
+import banner2 from '../../assets/img/banner/2.jpg'
 import banner3 from '../../assets/img/banner/3.jpg'
 
 // acara
@@ -18,7 +18,7 @@ import acara6 from '../../assets/img/acara/6.jpg'
 
 // penghargaan
 import penghargaan1 from '../../assets/img/penghargaan/2.jpg'
-import penghargaan2 from '../../assets/img/penghargaan/4.jpg'
+import penghargaan2 from '../../assets/img/penghargaan/3.jpg'
 
 // aktifitas
 import aktivitas1 from '../../assets/img/aktivitas/1.jpg'
@@ -28,7 +28,7 @@ import aktivitas3 from '../../assets/img/aktivitas/7.jpg'
 // fasilitas
 import fasilitas1 from '../../assets/img/fasilitas/22.jpg'
 import fasilitas2 from '../../assets/img/fasilitas/23.jpg'
-import fasilitas3 from '../../assets/img/fasilitas/3.JPG'
+import fasilitas3 from '../../assets/img/fasilitas/3.jpg'
 
 // program
 import program1 from '../../assets/img/program/1.jpeg'

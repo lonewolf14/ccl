@@ -3,24 +3,24 @@ import Img from 'react-image'
 
 // fasilitas
 import fasilitas1 from '../../assets/img/fasilitas/1.jpg'
-import fasilitas2 from '../../assets/img/fasilitas/2.JPG'
-import fasilitas3 from '../../assets/img/fasilitas/3.JPG'
-import fasilitas4 from '../../assets/img/fasilitas/4.JPG'
-import fasilitas5 from '../../assets/img/fasilitas/5.JPG'
-import fasilitas6 from '../../assets/img/fasilitas/6.JPG'
-import fasilitas7 from '../../assets/img/fasilitas/7.JPG'
-import fasilitas8 from '../../assets/img/fasilitas/8.JPG'
-import fasilitas9 from '../../assets/img/fasilitas/9.JPG'
-import fasilitas10 from '../../assets/img/fasilitas/10.JPG'
-import fasilitas11 from '../../assets/img/fasilitas/11.JPG'
-import fasilitas12 from '../../assets/img/fasilitas/12.JPG'
-import fasilitas13 from '../../assets/img/fasilitas/13.JPG'
-import fasilitas14 from '../../assets/img/fasilitas/14.JPG'
-import fasilitas15 from '../../assets/img/fasilitas/15.JPG'
-import fasilitas16 from '../../assets/img/fasilitas/16.JPG'
-import fasilitas17 from '../../assets/img/fasilitas/17.JPG'
-import fasilitas18 from '../../assets/img/fasilitas/18.JPG'
-import fasilitas19 from '../../assets/img/fasilitas/19.JPG'
+import fasilitas2 from '../../assets/img/fasilitas/2.jpg'
+import fasilitas3 from '../../assets/img/fasilitas/3.jpg'
+import fasilitas4 from '../../assets/img/fasilitas/4.jpg'
+import fasilitas5 from '../../assets/img/fasilitas/5.jpg'
+import fasilitas6 from '../../assets/img/fasilitas/6.jpg'
+import fasilitas7 from '../../assets/img/fasilitas/7.jpg'
+import fasilitas8 from '../../assets/img/fasilitas/8.jpg'
+// import fasilitas9 from '../../assets/img/fasilitas/9.jpg'
+import fasilitas10 from '../../assets/img/fasilitas/10.jpg'
+import fasilitas11 from '../../assets/img/fasilitas/11.jpg'
+import fasilitas12 from '../../assets/img/fasilitas/12.jpg'
+import fasilitas13 from '../../assets/img/fasilitas/13.jpg'
+import fasilitas14 from '../../assets/img/fasilitas/14.jpg'
+import fasilitas15 from '../../assets/img/fasilitas/15.jpg'
+import fasilitas16 from '../../assets/img/fasilitas/16.jpg'
+import fasilitas17 from '../../assets/img/fasilitas/17.jpg'
+import fasilitas18 from '../../assets/img/fasilitas/18.jpg'
+// import fasilitas19 from '../../assets/img/fasilitas/19.jpg'
 
 class Pages extends Component {
   constructor () {
@@ -100,15 +100,15 @@ class Pages extends Component {
             { this.onContent(fasilitas7, 'Tribun penonton', '') }
             { this.onContent(fasilitas6, 'Perpustakaan kecil', '') }
             { this.onContent(fasilitas12, '', '') }
-            {/* this.onContent(fasilitas9, 'title', 'description') */}
+            {/* this.onContent(fasilitas9, '', '') */}
             { this.onContent(fasilitas10, 'Gazebo untuk keperluan brifing dan diskusi naskah', '') }
-            {/* this.onContent(fasilitas11, 'title', 'description') */}
+            { this.onContent(fasilitas11, '', '') }
             { this.onContent(fasilitas13, 'Parkiran motor', '') }
-            {/* this.onContent(fasilitas14, 'title', 'description') */}
-            {/* this.onContent(fasilitas16, 'title', 'description') */}
-            {/* this.onContent(fasilitas17, 'title', 'description') */}
+            {/* this.onContent(fasilitas14, '', '') */}
+            { this.onContent(fasilitas16, '', '') }
+            { this.onContent(fasilitas17, '', '') }
             { this.onContent(fasilitas18, 'Properti pementasan', '') }
-            {/* this.onContent(fasilitas19, 'title', 'description') */}
+            {/* this.onContent(fasilitas19, '', '') */}
           </div>
         </div>
 
