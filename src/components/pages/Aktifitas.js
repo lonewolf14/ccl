@@ -155,7 +155,7 @@ class Pages extends Component {
               </h1>
               <div className="app-line"></div>
               <p className="txt-site txt-14 txt-primary txt-font-helvetica margin-15px">
-                Selain memiliki anggota tetap sebagai actorteater, komunitas CCL juga seringkali menggelar pementasan teater kjolektif yang melibatkan warga sekitar dalam proses kreatif dan hasil akhirnya.
+                Selain memiliki anggota tetap sebagai actorteater, komunitas CCL juga seringkali menggelar pementasan teater kolektif yang melibatkan warga sekitar dalam proses kreatif dan hasil akhirnya.
               </p>
             </div>
           </div>

@@ -129,7 +129,7 @@ class App extends Component {
                   <ul className={this.state.menuHeader}>
                     
                       <li onClick={this.opMenu}>
-                        <NavLink to={'/home'}>Home</NavLink>
+                        <NavLink to={'/home'}>Beranda</NavLink>
                       </li>
                     
                     
