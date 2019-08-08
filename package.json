@@ -2,9 +2,9 @@
   "name": "ccl",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ganjarhadiatna.github.io/ccl/",
+  "homepage": "https://lonewolf14.github.io/ccl/",
   "dependencies": {
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^2.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-image": "^2.1.3",
